@@ -15,7 +15,7 @@ checksum=$(bx sha256 $(bx sha256 $extended) | cut -b 1-8)
 senderAddress=$(bx base58-encode $extended$checksum)
 
 echo 
-echo " SENDER "
+echo " # SENDER "
 echo "
 export senderPrivateKey=$senderPrivateKey
 export senderPublicKey=$senderPublicKey
@@ -35,7 +35,7 @@ checksum=$(bx sha256 $(bx sha256 $extended) | cut -b 1-8)
 receiverAddress=$(bx base58-encode $extended$checksum)
 
 echo
-echo " RECEIVER "
+echo " # RECEIVER "
 echo "
 export receiverPrivateKey=$receiverPrivateKey
 export receiverPublicKey=$receiverPublicKey
